@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>True Caller</title>
+</head>
+
+<body>
+
+<center>
+    <h2>Track your number</h2>
+<form  action="" method="post">
+    {% csrf_token %}
+  <label for="number">Phone Number</label><br>
+  <input type="text" id="number" name="number"><br><br>
+  <input type="submit" value="Submit">
+    <br>{{phone}}<br>
+    <br>{{country}}<br>
+    <br>{{sim_provider}}<br>
+
+</form>
+</center>
+</body>
+</html>
